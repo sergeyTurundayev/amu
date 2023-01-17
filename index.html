@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amu</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> -->
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+</head>
+<body class="landing">
+  <header>
+    <div class="header-center">
+      <strong class="header-logo"><a class="header-logo-link" href="/">Об'єднання Мусульманок України</a></strong>
+      <nav class="header-nav">
+        <a href="/intro"><i class="fas fa-home"></i></a>
+        <a href="/about">Про нас</a>
+        <a href="/news">Новини</a>
+        <a href="/projects">Проекти</a>
+        <a href="/contacts">Контакти</a>
+      </nav>
+      <div class="header-mobile-button">
+        <span class="header-mobile-button-block"></span>
+      </div><!-- header-mobile-button -->
+      <script>
+        const headerMobileButton = document.querySelector('.header-mobile-button');
+        const headerNav = document.querySelector('.header-nav');
+
+        headerMobileButton.addEventListener('click', () => {
+          headerMobileButton.classList.toggle('open');
+          headerNav.classList.toggle('open');
+        });
+      </script>
+    </div>
+  </header>
+  <section class="intro" id="intro">
+    <style>
+      .intro{
+        background: url(./images/intro-bg.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+      }
+      .intro-center{
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 103px 29px 29px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .intro-logo{
+        display: inline-block;
+        height: 131px;
+        background: url(./images/logo-img.png) no-repeat;
+        background-size: contain;
+        background-position: left center;
+        padding: 11px 0 0 139px;
+        box-sizing: border-box;
+        font: 37px/41px 'El Messiri', Geogia, sans-serif;
+        max-width: 367px;
+        margin: 0 0 47px;
+      }
+      .intro-text{
+        background: #3c649f;
+        padding: 19px 29px;
+      }
+      .intro-title{
+        margin: 0 0 19px;
+        font: 29px/37px Helvetica, Arial, sans-serif;
+        display: inline-block;
+      }
+      .intro-description{
+        display: inline-block;
+        font: 19px/29px Helvetica, Arial, sans-serif;
+      }
+      @media (max-width: 480px) {
+        .intro-logo{
+          font-size: 29px;
+          line-height: 29px;
+          height: 97px;
+          max-width: 307px;
+          padding: 7px 0 0 113px;
+        }
+        .intro-title{
+          font-size: 23px;
+          line-height: 29px;
+        }
+        .intro-description{
+          font-size: 17px;
+          line-height: 17px;
+        }
+      }
+    </style>
+    <div class="intro-center">
+      <div class="intro-logo">Об'єднання Мусульманок України</div>
+      <div class="intro-text">
+        <h1 class="intro-title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        <strong class="intro-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quisquam eveniet beatae assumenda cumque vel atque dignissimos nulla libero!</strong>
+      </div><!-- text -->
+    </div><!-- center -->
+  </section><!-- intro -->
+  <section class="prayer-time">
+    <style>
+      .prayer-time{
+        background: #f9f9f9;
+        color: #0f0f0f;
+      }
+      .prayer-time-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -9px;
+      }
+      .prayer-time-box{
+        flex: 1 1 15.15%;
+        padding: 0 9px;
+        box-sizing: border-box;
+        margin: 0 0 19px;
+      }
+      .prayer-time-box-border{
+        border: 1px solid #3c649f;
+        border-radius: 7px;
+        padding: 7px;
+      }
+      .prayer-time-box strong{
+        display: block;
+        color: #3c649f;
+        margin: 0 0 7px;
+      }
+      .prayer-time-box span{
+        display: block;
+        font-size: 19px;
+      }
+      .prayer-time-info{
+        margin: 0 0 7px;
+        font-size: 17px;
+      }
+      @media (max-width: 800px) {
+        .prayer-time-box{
+          flex: 1 1 33.33%;
+        }
+      }
+      @media (max-width: 480px) {
+        .prayer-time-box{
+          flex: 1 1 50%;
+        }
+      }
+    </style>
+    <div class="section-center">
+      <h2>Час молитв для м. <span class="prayer-time-city">Киев</span></h2>
+      <div class="prayer-time-container">
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Фаджр</strong>
+          <span data-name="fajr">00:00</span>
+          </div>
+        </div><!-- box -->
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Світанок</strong>
+          <span data-name="sunrise">00:00</span>
+          </div>
+        </div><!-- box -->
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Зухр</strong>
+          <span data-name="dhuhr">00:00</span>
+          </div>
+        </div><!-- box -->
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Аср</strong>
+          <span data-name="asr">00:00</span>
+          </div>
+        </div><!-- box -->
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Магріб</strong>
+          <span data-name="maghrib">00:00</span>
+          </div>
+        </div><!-- box -->
+        <div class="prayer-time-box">
+          <div class="prayer-time-box-border">
+          <strong>Іша</strong>
+          <span data-name="isha">00:00</span>
+          </div>
+        </div><!-- box -->
+      </div><!-- container -->
+      <p class="prayer-time-info">*Метод рассчета - Северная Америка</p>
+  </div><!-- center -->
+  </section><!-- prayer-time -->
+  <section class="lanidng-about" id="about">
+    <style>
+      .about-us-list{
+        margin: 0 -11px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .about-us-item {
+        flex: 1 1 50%;
+        padding: 0 11px 29px;
+        box-sizing: border-box;
+        min-width: 3;
+      }
+      .about-us-item-title{
+        display: flex;
+        align-items: center;
+        margin: 0 0 19px;
+      }
+      .about-us-item-title h3{
+        margin: 0;
+      }
+      .about-us-list i{
+        font-size: 47px;
+        line-height: 47px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 19px 0 0;
+      }
+      .about-us-item ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .about-us-item li{
+        display: flex;
+        margin: 0 0 7px;
+      }
+      .about-us-item li:before{
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #fff;
+        min-width: 3px;
+        margin: 11px 7px 0 0;
+      }
+      @media (max-width: 640px) {
+        .about-us-item {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+    <div class="section-center">
+      <h2>Про нас</h2>
+      <div class="about-us-list">
+        <div class="about-us-item">
+          <div class="about-us-item-title">
+            <i class="fas fa-mountain"></i>
+            <h3>Місія</h3>
+          </div>
+          <p>Сприяти фізичному, духовно-моральному, соціальному розвитку жінок і дітей в дусі ісламських цінностей.</p>
+        </div><!-- about-us-item -->
+        <div class="about-us-item">
+          <div class="about-us-item-title">
+            <i class="far fa-eye"></i>
+            <h3>Бачення</h3>
+          </div>
+          <p>Досягти жіночої досконалості в сімейних відносинах і вихованні дітей в дусі ісламу.</p>
+        </div><!-- about-us-item -->
+        <div class="about-us-item">
+          <div class="about-us-item-title">
+            <i class="far fa-gem"></i>
+            <h3>Цінності</h3>
+          </div>
+          <p><strong>Загальні</strong>: моральні норми і принципи Ісламу; приклад і
+            успішність у всіх сферах життя; прагнення до знань; у
+            здоровому тілі - здоровий дух.</p>
+            <p><strong>Приватні</strong>: щедрість, загальне понад особисте,
+            великодушність, мудрість, цілеспрямованість.</p>
+        </div><!-- about-us-item -->
+        <div class="about-us-item">
+          <div class="about-us-item-title">
+            <i class="fas fa-bullseye"></i>
+            <h3>Цілі</h3>
+          </div>
+          <ul>
+            <li>Забезпечення всебічної гармонійної освіти і розвитку мусульман України.</li>
+            <li>Сприяння у розвитку ісламської культури і науки.</li>
+            <li>Організація просвітницької діяльності.</li>
+            <li>Пропаганда здорового способу життя, сприяння та підтримка в сфері охорони здоров'я жінок і дітей.</li>
+            <li>Участь та сприяння у захисті навколишнього середовища.</li>
+            <li>Організація та надання соціальної та правової підтримки незахищеним верствам населення.</li>
+            <li>Підтримка і розвиток професійної діяльності мусульманок</li>
+          </ul>
+        </div><!-- about-us-item -->
+      </div><!-- about-us-list -->
+    </div><!-- center -->
+  </section><!-- about -->
+  <section class="landing-news" id="news">
+    <style>
+      .landing-news{
+        background: #f9f9f9;
+        color: #0f0f0f;
+        text-align: center;
+      }
+      .items-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -9px;
+        text-align: left;
+        position: relative;
+      }
+      .single-item{
+        padding: 0 9px;
+        margin: 0 0 19px;
+        box-sizing: border-box;
+      }
+      .items-container .itc-slider__item {
+         flex: 0 0 33.33%;
+          max-width: 33.33%;
+      }
+      .single-item-holder{
+        border: 1px solid  #9f9f9f;
+        border-radius: 7px;
+        padding: 0 11px;
+        overflow: hidden;
+        background: #fff;
+      }
+      .item-picture{
+        display: block;
+        margin: 0 -11px 19px;
+        height: 199px;
+      }
+      .item-picture img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .single-item-title{
+        font: 19px/23px Helvetica, Arial, sans-serif;
+        margin: 0 0 19px;
+      }
+      .single-item-title a{
+        color: #3c649f;
+        text-decoration: none;
+      }
+      .item-more,
+      .item-more-all{
+        display: inline-block;
+        margin: 0 0 19px;
+        background: #F1D04C;
+        border-radius: 7px;
+        padding: 7px 19px;
+        border: 2px solid #F1D04C;
+        color: #0f0f0f;
+        text-decoration: none;
+        transition: all 0.6s;
+      }
+      .item-more:hover{
+        background: #fff;
+      }
+      .item-more{
+        font-size: 13px;
+        padding: 3px 11px;
+      }
+      .item-more-all{
+        background: #F18D4C;
+        border: 2px solid #F18D4C;
+        margin: 19px 0 0;
+        color: #fff;
+      }
+      .item-more-all:hover{
+        background: #fff;
+        color: #F18D4C;
+      }
+      .slider-arrow {
+        display: flex;
+        align-items: flex-end;
+        border: none;
+        padding: 5px;
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        top: 50%;
+        margin: -13px 0 0;
+        background: none;
+        cursor: pointer;
+        transition: all 0.6s;
+        font-size: 29px;
+        line-height: 29px;
+        color: #F18D4C;
+      }
+      body .itc-slider__btn_prev {
+        left: -19px;
+      }
+      body .itc-slider__btn_next {
+        right: -19px;
+      }
+      @media (max-width: 1000px) {
+        .items-container .itc-slider__item {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+      @media (max-width: 640px) {
+        .items-container .itc-slider__item {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+    <div class="section-center">
+      <h2>Новини</h2>
+      <div class="items-container" data-slider="itc-slider">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        <div class="single-item itc-slider__item">
+          <div class="single-item-holder">
+            <a href="/" class="item-picture">
+              <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+            </a>
+            <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+            <a href="/" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+        </div><!-- single-news -->
+        </div><!-- items -->
+        </div><!-- wrapper -->
+        <button class="itc-slider__btn_prev slider-arrow"><i class="fas fa-chevron-left"></i></button>
+        <button class="itc-slider__btn_next slider-arrow"><i class="fas fa-chevron-right"></i></button>
+        </div><!-- container -->
+      <a href="/" class="item-more-all">Всі новини</a>
+    </div><!-- center -->
+  </section><!-- news -->
+  <section class="landing-projects" id="projects">
+    <style>
+      .landing-projects{
+        text-align: center;
+      }
+      .landing-projects .items-container{
+        color: #0f0f0f;
+      }
+    </style>
+    <div class="section-center">
+      <h2>Проекти</h2>
+    <div class="items-container" data-slider="itc-slider">
+      <div class="itc-slider__wrapper">
+        <div class="itc-slider__items">
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+          <div class="single-item itc-slider__item">
+        <div class="single-item-holder">
+          <a href="/" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="/" class="item-more">Детальніше</a>
+      </div><!-- holder -->
+          </div><!-- single-news -->
+        </div><!-- items -->
+      </div><!-- wrapper -->
+      <button class="itc-slider__btn_prev slider-arrow"><i class="fas fa-chevron-left"></i></button>
+      <button class="itc-slider__btn_next slider-arrow"><i class="fas fa-chevron-right"></i></button>
+    </div><!-- projects-container -->
+    <a href="/" class="item-more-all">Всі проекти</a>
+  </div><!-- center -->
+  </section><!-- projects -->
+  <section class="landing-contacts" id="contacts">
+    <style>
+      .landing-contacts{
+        background: #f9f9f9;
+        color: #0f0f0f;
+      }
+      .contacts-list{
+        margin: 0 -23px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      .contacts-list li{
+        margin: 0 23px 19px;
+      }
+      .contacts-list i{
+        font-size: 47px;
+        line-height: 47px;
+      }
+      .fa-telegram-plane{
+        color: #229ED9;
+      }
+      .fa-whatsapp{
+        color: #25D366;
+      }
+      .fa-viber{
+        color: #8f5db7;
+      }
+    </style>
+    <div class="section-center">
+      <h2>Контакти</h2>
+      <ul class="contacts-list">
+        <li>
+          <a href="/"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        <li>
+          <a href="/"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="/"><i class="fab fa-viber"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section><!-- contacts -->
+  <link href="./itc-slider/itc-slider.min.css" rel="stylesheet">
+  <script src="./itc-slider/itc-slider.min.js"></script>
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
