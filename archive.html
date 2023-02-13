@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amu</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+  <header>
+    <div class="header-center">
+      <strong class="header-logo">
+        <a class="header-logo-link" href="./index.html">Об'єднання Мусульманок України</a>
+      </strong>
+      <nav class="header-nav">
+        <a href="./index.html"><i class="fas fa-home"></i></a>
+        <a href="./single.html">Про нас</a>
+        <a href="./archive.html">Новини</a>
+        <a href="./archive.html">Проекти</a>
+        <a href="./single.html">Контакти</a>
+      </nav>
+      <div class="header-mobile-button">
+        <span class="header-mobile-button-block"></span>
+      </div><!-- header-mobile-button -->
+      <script>
+        const headerMobileButton = document.querySelector('.header-mobile-button');
+        const headerNav = document.querySelector('.header-nav');
+
+        headerMobileButton.addEventListener('click', () => {
+          headerMobileButton.classList.toggle('open');
+          headerNav.classList.toggle('open');
+        });
+      </script>
+    </div>
+  </header>
+  <picture class="page-top-img">
+    <img src="./images/intro-bg.jpeg" alt="">
+  </picture>
+  <div class="archive-wrapper">
+    <style>
+      .archive-wrapper {
+        max-width: 1200px;
+        padding: 0 29px 19px;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+    </style>
+    <h1 class="page-title">Название страницы</h1>
+    <div class="items-container">
+      <div class="single-item">
+        <div class="single-item-holder">
+          <a href="./single.html" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="./single.html" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+      </div><!-- single-news -->
+      <div class="single-item">
+        <div class="single-item-holder">
+          <a href="./single.html" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="./single.html" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+      </div><!-- single-news -->
+      <div class="single-item">
+        <div class="single-item-holder">
+          <a href="./single.html" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="./single.html" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+      </div><!-- single-news -->
+      <div class="single-item">
+        <div class="single-item-holder">
+          <a href="./single.html" class="item-picture">
+            <img src="./images/intro-bg.jpeg" alt="Lorem ipsum dolor sit, amet consectetur adipisicing.">
+          </a>
+          <h3 class="single-item-title"><a href="/">Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga temporibus optio nemo sint quae maxime. Dolorum, maxime dignissimos...</p>
+          <a href="./single.html" class="item-more">Детальніше</a>
+        </div><!-- holder -->
+      </div><!-- single-news -->
+    </div><!-- container -->
+    <ul class="archive-pager">
+      <li><span class="archive-pager-prev"></span></li>
+      <li><span class="archive-pager-custom">1</span></li>
+      <li><a href="/">2</a></li>
+      <li><a href="/">3</a></li>
+      <li><span class="archive-pager-dots">...</span></li>
+      <li><a href="/">5</a></li>
+      <li><a href="/">6</a></li>
+      <li><a href="/">7</a></li>
+      <li><span class="archive-pager-next"></span></li>
+    </ul>
+  </div><!-- wrapper -->
+  <section class="section-contacts" id="contacts">
+    <div class="section-center">
+      <ul class="contacts-list">
+        <li>
+          <a href="/"><i class="fab fa-telegram-plane"></i></a>
+        </li>
+        <li>
+          <a href="/"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="/"><i class="fab fa-viber"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section><!-- contacts -->
+</body>

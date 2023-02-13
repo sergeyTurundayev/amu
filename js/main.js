@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let landing = false;
-  if(document.querySelectorAll('.landing').length > 0){
-    landing = true;
-  }
-
-  const headerNavLinks = document.querySelectorAll('.header-nav a');
+  const headerNavLinks = document.querySelectorAll('.this-page');
 
   headerNavLinks.forEach((element) => {
     element.addEventListener('click', (event) => {
-
-      if(landing){
         event.preventDefault();
+        
         let pathname = '';
 
         if(event.target.nodeName == 'I'){
@@ -30,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             600
           );
         }
-      }
-
     });
   });
 
